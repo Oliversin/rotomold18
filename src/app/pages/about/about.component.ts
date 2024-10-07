@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { VisitUsComponent } from '../../shared/components/visit-us/visit-us.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [],
+  imports: [VisitUsComponent,RouterLink],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
