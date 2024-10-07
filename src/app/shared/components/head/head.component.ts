@@ -16,7 +16,7 @@ export class HeadComponent {
     { label: 'Services', link: '/services' },
     { label: 'About', link: '/about' },
     { label: 'FAQ', link: '/faq' },
-    { label: 'Contact', link: '#' }
+    { label: 'Contact', link: '/contact' }
   ];
 
 
