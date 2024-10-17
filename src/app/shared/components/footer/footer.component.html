@@ -1,13 +1,14 @@
 <!-- component -->
-<footer class="bg-gradient-to-r from-[#007faa] via-[#bce1ff] to-slate-50">
+<footer class="bg-[#007faa]">
     <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div>
         <img src="assets/logoHeader.png" class="mr-5 md:h-20 sm:h-9" alt="logo" />
           <p class="max-w-xs mt-4 text-sm text-white">
-            <span class="block"><a href="tel:+19362352011"> <strong>Phone:</strong> +1.936.235.2011</a></span>
-            <span class="block">Paseo, Bahía Todos Santos 322, Ex-Ejido Chapultepec, 22785 Ensenada, B.C., Mexico</span>
-            <span class="block">15461 Slover Ave, Fontana, CA 92337, United States</span>
+            <span class="block my-2"><a href="tel:{{vars.phone}}"> <strong>Phone:</strong> {{vars.phoneCayman}} / {{vars.phone}}</a></span>
+            <span class="block my-2"><a href="mailto:{{vars.email}}"> <strong>Email:</strong> {{vars.email}}</a></span>
+            <span class="block my-2">Paseo, Bahía Todos Santos 322, Ex-Ejido Chapultepec, 22785 Ensenada, B.C., Mexico</span>
+            <span class="block my-2">15461 Slover Ave, Fontana, CA 92337, United States</span>
           </p>
           <div class="flex mt-8 space-x-6 text-white">
             <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
@@ -30,7 +31,7 @@
             </a>
             
           </div>
-          <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+          <a class="hover:opacity-75 hidden md:block" routerLink="/about" fragment="iso-9k">
             <span class="sr-only"> ISO </span>
             <svg class="w-36 h-36 " 
                viewBox="0 0 600.000000 385" fill="#ffffff"
@@ -45,47 +46,49 @@
               About Us
             </p>
             <nav class="flex flex-col mt-4 space-y-2 text-sm text-white">
-              <a class="hover:opacity-75" href> About </a>
-              <a class="hover:opacity-75" href> Services </a>
-              <a class="hover:opacity-75" href> FAQ </a>
-              <a class="hover:opacity-75" href> Contact </a>
+              <a class="hover:opacity-75" routerLink="/about"> About </a>
+              <a class="hover:opacity-75" routerLink="services"> Services </a>
+              <a class="hover:opacity-75" routerLink="/faq"> FAQ </a>
+              <a class="hover:opacity-75" routerLink="/contact"> Contact </a>
             </nav>
           </div>
           <div>
-            <p class="font-medium text-black">
+            <p class="font-medium text-white">
               Services
             </p>
-            <nav class="flex flex-col mt-4 space-y-2 text-sm text-black">
-              <a class="hover:opacity-75" href> Rotational Molding</a>
-              <a class="hover:opacity-75" href> Mold Making </a>
-              <a class="hover:opacity-75" href> Post Processing </a>
-              <a class="hover:opacity-75" href> Foam Insulation </a>
-              <a class="hover:opacity-75" href> Shipping & Stocking </a>
-              <a class="hover:opacity-75" href> Others </a>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm text-white">
+              <a class="hover:opacity-75" routerLink="/services/rotational-molding"> Rotational Molding</a>
+              <a class="hover:opacity-75" routerLink="/services/mold-making"> Mold Making </a>
+              <a class="hover:opacity-75" routerLink="/services/post-processing"> Post Processing </a>
+              <a class="hover:opacity-75" routerLink="/services/foam-insulation"> Foam Insulation </a>
+              <a class="hover:opacity-75" routerLink="/services/shipping"> Shipping & Stocking </a>
+              <a class="hover:opacity-75" routerLink="/services/other-services"> Others </a>
             </nav>
           </div>
-          <div>
+          <div class="text-white">
             <p class="font-medium">
               Helpful Links
             </p>
-            <nav class="flex flex-col mt-4 space-y-2 text-sm text-black">
-              <a class="hover:opacity-75" href="/contact"> Contact </a>
-              <a class="hover:opacity-75" href="/faq"> FAQs </a>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm ">
+              <a class="hover:opacity-75" routerLink="/contact"> Contact </a>
+              <a class="hover:opacity-75" routerLink="/faq"> FAQs </a>
             </nav>
           </div>
-          <div>
+          <div class="text-white">
             <p class="font-medium">
               Legal
             </p>
-            <nav class="flex flex-col mt-4 space-y-2 text-sm text-black">
+            <nav class="flex flex-col mt-4 space-y-2 text-sm ">
               <a class="hover:opacity-75" href> Privacy Policy </a>
               <a class="hover:opacity-75" href> Terms &amp; Conditions </a>
             </nav>
           </div>
         </div>
       </div>
-      <p class="mt-8 text-xs text-white">
+      <p class="mt-8 text-sm text-white">
         © 2024 RotomoldMexico
       </p>
     </div>
   </footer>
+
+                                        

@@ -11,7 +11,8 @@
                     <div class="max-w-full mx-auto rounded-lg overflow-hidden">
                         <div class="border-t border-gray-200 px-6 py-4">
                             <h3 class="text-lg font-bold text-gray-900">Contact</h3>
-                            <p class="mt-1 font-bold text-gray-600"><a href="tel:+123">Phone: +1.936.235.2011</a></p>
+                            <p class="mt-1 font-bold text-gray-600"><a href="mailto:{{vars.email}}">Email: {{vars.email}}</a></p>
+                            <p class="mt-1 font-bold text-gray-600"><a href="tel:{{vars.phoneCayman}}">Phone: {{vars.phoneCayman}}</a> / <a href="tel:{{vars.phone}}">{{vars.phone}}</a></p>
                             <a class="flex m-1" href="tel:+1.936.235.2011">
                                 <div class="flex-shrink-0">
                                     <div
@@ -30,12 +31,12 @@
                         </div>
                         <div class="px-6 py-4">
                             <h3 class="text-lg font-medium text-gray-900">Our Address</h3>
-                            <p class="mt-1 text-gray-600">Paseo, Bahía Todos Santos 322, Ex-Ejido Chapultepec, 22785 Ensenada, B.C., Mexico</p>
-                            <p class="mt-1 text-gray-600">15461 Slover Ave, Fontana, CA 92337, United States</p>
+                            <p class="mt-1 text-gray-600">{{vars.address1}}</p>
+                            <p class="mt-1 text-gray-600">{{vars.address2}}</p>
                         </div>
                         <div class="border-t border-gray-200 px-6 py-4">
                             <h3 class="text-lg font-medium text-gray-900">Hours</h3>
-                            <p class="mt-1 text-gray-600">Monday - Friday : 8AM - 5:30pm</p>
+                            <p class="mt-1 text-gray-600">{{vars.hours}}</p>
                         </div>
                     </div>
                 </div>
